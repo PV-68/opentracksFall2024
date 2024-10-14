@@ -71,7 +71,7 @@ public class TrackStoppedActivity extends AbstractTrackDeleteActivity implements
 
         viewBinding.time.setText(StringUtils.formatElapsedTime(track.getTrackStatistics().getMovingTime()));
 
-        updateDisplaySpeed();
+        updateDisplaySpeed(track);
 
         {
             Pair<String, String> parts = DistanceFormatter.Builder()
